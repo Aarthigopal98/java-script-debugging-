@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sentence = "India is the best country in the world "
+        let words =  
+        sentence.toLowerCase().split(" ");
+        let count = {};
+        count[word]++
+        count[word]=count[word]+1;
+
+
+        for (let word of words) {
+            if (count[word]) {
+                count[word] ++;
+                        }
+                    else{
+                  count[word] = 1;
+                    }       
+                     }
+                     console.log(count);
+        
+    </script>
+</body>
+</html>
